@@ -1,6 +1,6 @@
 import "./Advice.css";
 
-const Advice: React.FC<{ advice: string }> = function (prop: any) {
+const Advice= function (prop: any) {
   return (
     <div>
       <p className="advice">"{prop.advice}"</p>

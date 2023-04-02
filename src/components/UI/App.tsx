@@ -6,15 +6,22 @@ import Divider from "./divider/Divider";
 import "./App.css";
 import Spinner from "./spinner/Spinner";
 import fetchAdvice from "../../ts/data";
-
-const data = await fetchAdvice();
+import {
+  changeAdvice,
+  toggleSpinner,
+  toggleText,
+} from "../../ts/functionality";
 
 function App() {
   return (
     <Card>
       <Spinner />
-      <AdviceId id={data.slip.id} />
-      <Advice advice={data.slip.advice} />
+      <AdviceId id={117} />
+      <Advice
+        advice={
+          "It is easy to sit up and notice, what's difficult is getting up and taking action."
+        }
+      />
       <Divider />
       <Dice />
     </Card>
