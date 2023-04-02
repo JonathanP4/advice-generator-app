@@ -4,15 +4,15 @@ import {
   changeAdvice,
   toggleSpinner,
   toggleText,
-} from "../../../ts/event-handlers";
+} from "../../../ts/functionality";
 
 const Dice = function () {
   return (
     <div
       className="dice-img-container"
       onClick={() => {
-        toggleSpinner();
         toggleText();
+        toggleSpinner();
         changeAdvice();
       }}
     >

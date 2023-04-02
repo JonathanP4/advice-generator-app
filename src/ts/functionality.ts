@@ -14,14 +14,18 @@ export function toggleText() {
 
 // Show new advice
 export async function changeAdvice() {
-  const data = await fetchAdvice();
+  try {
+    const data = await fetchAdvice();
 
-  const advice = document.querySelector("p")!;
-  const id = document.querySelector("h1")!;
+    const advice = document.querySelector("p")!;
+    const id = document.querySelector("h1")!;
 
-  advice.textContent = data.slip.advice;
-  id.textContent = `Advice #${data.slip.id}`;
+    advice.textContent = data.slip.advice;
+    id.textContent = `Advice #${data.slip.id}`;
 
-  toggleSpinner();
-  toggleText();
+    toggleSpinner();
+    toggleText();
+  } catch (err) {
+    console.error(err);
+  }
 }

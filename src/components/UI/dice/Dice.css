@@ -10,4 +10,5 @@
   transform: translateX(-50%);
   margin: -2rem 0;
   cursor: pointer;
+  user-select: none;
 }

@@ -2,3 +2,4 @@ node_modules
 vite.config.ts
 tsconfig.node.json
 tsconfig.json
+public

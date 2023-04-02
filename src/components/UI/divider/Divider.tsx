@@ -1,8 +1,8 @@
-import divider from "/src/assets/pattern-divider-desktop.svg";
+import "./Divider.css";
+
 const Divider = function () {
   return (
-    <div>
-      <img src={divider} alt="" />
+    <div className="divider__container">
     </div>
   );
 };

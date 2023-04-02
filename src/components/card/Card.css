@@ -2,16 +2,16 @@
   position: relative;
   background: hsl(217, 19%, 24%);
   padding: 3rem;
-  padding-bottom: 0;
-  width: 80vmin;
-  min-height: 340px;
+  width: 100%;
+  max-width: 542px;
   margin: 0 auto;
   border-radius: 1rem;
-  display: grid;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .card {
+    width: 90%;
     padding: 2rem;
+    padding-bottom: 3rem;
   }
 }
