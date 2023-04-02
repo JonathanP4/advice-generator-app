@@ -1,11 +1,17 @@
 .card {
+  position: relative;
   background: hsl(217, 19%, 24%);
   padding: 3rem;
   padding-bottom: 0;
-  width: 90vmin;
-  aspect-ratio: 16/10;
+  width: 80vmin;
+  min-height: 340px;
   margin: 0 auto;
   border-radius: 1rem;
   display: grid;
-  align-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem;
+  }
 }

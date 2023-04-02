@@ -4,3 +4,9 @@ h1 {
   letter-spacing: 0.253rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 0.8rem;
+  }
+}

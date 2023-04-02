@@ -2,3 +2,13 @@ p {
   font-size: 1.75rem;
   color: hsl(193, 38%, 86%);
 }
+
+.invisible {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
+}

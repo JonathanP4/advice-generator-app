@@ -1,9 +1,9 @@
 import "./AdviceId.css";
 
-const AdviceId = function () {
+const AdviceId = function (prop: any) {
   return (
     <div>
-      <h1 id="advice_id">Advice #117</h1>
+      <h1 id="advice_id">Advice #{prop.id}</h1>
     </div>
   );
 };

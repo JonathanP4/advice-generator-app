@@ -1,4 +1,13 @@
 .dice-img-container {
   background: hsl(150, 100%, 66%);
-  padding: 1rem;
+  padding: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  transform: translateX(-50%);
+  margin: -2rem 0;
+  cursor: pointer;
 }

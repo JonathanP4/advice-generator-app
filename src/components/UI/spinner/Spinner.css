@@ -1,0 +1,24 @@
+.spinner {
+  width: 50px;
+  aspect-ratio: 1;
+  border: 5px solid hsl(193, 38%, 86%);
+  border-top: 5px solid hsl(150, 100%, 66%);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 2s linear infinite;
+}
+
+.spinner.d-none {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

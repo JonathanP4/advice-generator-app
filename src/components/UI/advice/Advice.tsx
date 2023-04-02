@@ -1,12 +1,9 @@
 import "./Advice.css";
-import fetchAdvice from "../../../ts/data";
 
-const data = await fetchAdvice();
-
-const Advice = function () {
+const Advice = function (prop: any) {
   return (
     <div>
-      <p className="advice">{data.slip.advice}</p>
+      <p className="advice">"{prop.advice}"</p>
     </div>
   );
 };
