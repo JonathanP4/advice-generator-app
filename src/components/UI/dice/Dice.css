@@ -12,3 +12,12 @@
   cursor: pointer;
   user-select: none;
 }
+
+.dice-img-container:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 1rem hsla(150, 100%, 66%, 0.6);
+}
+.dice-img-container:not(:focus) {
+  transition: 0.3s;
+  box-shadow: 0;
+}
