@@ -1,4 +1,4 @@
-import dice from "/src/assets/icon-dice.svg";
+import dice from "../../../assets/icon-dice.svg";
 import "./Dice.css";
 import {
   changeAdvice,
