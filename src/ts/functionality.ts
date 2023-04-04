@@ -9,7 +9,8 @@ export function toggleSpinner() {
 // Show/hide advice
 export function toggleText() {
   const advice = document.querySelector("p")!;
-  advice.classList.toggle("invisible");
+  const adviceId = document.querySelector("#advice_id")!;
+  [advice, adviceId].forEach((el) => el.classList.toggle("invisible"));
 }
 
 // Show new advice
