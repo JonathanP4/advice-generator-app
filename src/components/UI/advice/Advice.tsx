@@ -8,10 +8,15 @@ const Advice = function () {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchAdvice();
-      setAdvice(data.slip.advice);
-      toggleSpinner();
-      toggleText();
+      try {
+        const data = await fetchAdvice();
+        if (!data) throw new Error("Couldn't fetch advice");
+        setAdvice(data.slip.advice);
+        toggleSpinner();
+        toggleText();
+      } catch (err) {
+        throw err;
+      }
     };
     fetchData();
   }, []);

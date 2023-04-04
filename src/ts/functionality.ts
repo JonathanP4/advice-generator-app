@@ -17,6 +17,7 @@ export function toggleText() {
 export async function changeAdvice() {
   try {
     const data = await fetchAdvice();
+    if (!data) throw new Error("Couldn't fetch advice");
 
     const advice = document.querySelector("p")!;
     const id = document.querySelector("h1")!;
@@ -27,6 +28,6 @@ export async function changeAdvice() {
     toggleSpinner();
     toggleText();
   } catch (err) {
-    console.error(err);
+    throw err;
   }
 }

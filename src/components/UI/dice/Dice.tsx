@@ -7,15 +7,13 @@ import {
 } from "../../../ts/functionality";
 
 const Dice = function () {
+  const cascade = () => {
+    toggleText();
+    toggleSpinner();
+    changeAdvice();
+  };
   return (
-    <div
-      className="dice-img-container"
-      onClick={() => {
-        toggleText();
-        toggleSpinner();
-        changeAdvice();
-      }}
-    >
+    <div className="dice-img-container" onClick={cascade}>
       <img src={dice} alt="dice" />
     </div>
   );

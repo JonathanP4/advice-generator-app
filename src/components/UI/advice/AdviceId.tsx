@@ -7,8 +7,13 @@ const AdviceId = function () {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchAdvice();
-      setId(data.slip.id);
+      try {
+        const data = await fetchAdvice();
+        if (!data) throw new Error("Couldn't fetch advice");
+        setId(data.slip.id);
+      } catch (err) {
+        throw err;
+      }
     };
     fetchData();
   }, []);
